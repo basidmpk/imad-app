@@ -10,6 +10,12 @@ var articleOne={ title: 'article one',
             content:' <p>  This is  article one. I am studing how to make webpage.</p> '
     
 };
+function createTemplate(data)
+{
+    var title=data.title;
+    var heading=data.heading;
+    var date=data.date;
+    var content=data.conttent;
 var htmlTemplate=`<html>
 <head>
     <title>
@@ -39,13 +45,14 @@ var htmlTemplate=`<html>
  </div>
  </body>
  </html>`;
-
+return htmlTemplate;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    res.send(createTemplate(Articleone));
     
 });
 
