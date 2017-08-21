@@ -5,9 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne={ title: 'article one',
-            heading:'article-one',
-            content:' <p>  This is  article one. I am studing how to make webpage.</p> '
+var articleOne={ title: `article one`,
+            heading:`article-one`,
+            content:` <p>  This is  article one. I am studing how to make webpage.</p> `
     
 };
 function createTemplate(data)
