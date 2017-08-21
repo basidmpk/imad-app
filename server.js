@@ -31,10 +31,10 @@ var htmlTemplate=`<html>
  </div>   
  <hr/>
  <h3>
-     Article one
+     s{content}
  </h3>
  <div>
-     aug 20 2017
+     s{date}
  </div>
  <div>
    <p>
