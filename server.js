@@ -19,7 +19,7 @@ function createTemplate(data)
 var htmlTemplate=`<html>
 <head>
     <title>
-        Article one beutiful flowers
+        s{title}
     </title>
     <link href="/ui/style.css" rel="stylesheet" />
         </head>
@@ -31,15 +31,13 @@ var htmlTemplate=`<html>
  </div>   
  <hr/>
  <h3>
-     s{content}
+     s{heading}
  </h3>
  <div>
      s{date}
  </div>
  <div>
-   <p>
-       This is  article one. I am studing how to make webpage  
-   </p>  
+   s{content}
  </div>
 
  </div>
