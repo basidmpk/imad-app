@@ -10,7 +10,35 @@ var articleOne={ title: 'article one',
             content:' <p>  This is  article one. I am studing how to make webpage.</p> '
     
 };
+var htmlTemplate=`<html>
+<head>
+    <title>
+        Article one beutiful flowers
+    </title>
+    <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+<body>
+    <div class='container'>
+   
+ <div>
+ <a href="/">Home</a>    
+ </div>   
+ <hr/>
+ <h3>
+     Article one
+ </h3>
+ <div>
+     aug 20 2017
+ </div>
+ <div>
+   <p>
+       This is  article one. I am studing how to make webpage  
+   </p>  
+ </div>
 
+ </div>
+ </body>
+ </html>`;
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
